@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>UNIT TEST 2 — TestMaker2026</title>
+<style>
+  body{font-family:Arial;margin:0;background:#f4f7fb;display:flex;align-items:center;justify-content:center;height:100vh}
+  #wrap{width:95%;max-width:900px;background:#fff;padding:20px;border-radius:10px;box-shadow:0 8px 24px rgba(0,0,0,.06);max-height:92vh;overflow:auto}
+  .q{margin:16px 0}
+  button{padding:10px 14px;border:none;border-radius:8px;cursor:pointer;background:#0366d6;color:#fff}
+  #startBtn{display:block;margin:12px auto}
+  #status{color:#c0392b;font-weight:600;text-align:center}
+</style>
+</head>
+<body>
+  <div id="wrap">
+    <h1>UNIT TEST 2</h1>
+    <div id="before">
+      <p>Press Start to enter fullscreen. Do not exit fullscreen or switch tabs.</p>
+      <button id="startBtn">Start UNIT TEST 2</button>
+      <p id="status"></p>
+    </div>
+
+    <form id="examForm" style="display:none">
+      <div class="q">
+        <p>1. It is a layer of software used to manage computer resources. It provides the interface, configures and manages hardware to connect components to applications.</p>
+        <label><input type="radio" name="q1" value="c"> c. Operating System</label><br>
+        <label><input type="radio" name="q1" value="a"> a. Program Applications</label><br>
+        <label><input type="radio" name="q1" value="b"> b. Device Drivers</label><br>
+        <label><input type="radio" name="q1" value="d"> d. BIOS</label>
+      </div>
+
+      <div class="q">
+        <p>2. These are small software programs that help the operating system use the hardware devices.</p>
+        <label><input type="radio" name="q2" value="a"> a. Drivers</label><br>
+        <label><input type="radio" name="q2" value="b"> b. BIOS</label><br>
+        <label><input type="radio" name="q2" value="c"> c. Windows</label><br>
+        <label><input type="radio" name="q2" value="d"> d. Operating Systems</label>
+      </div>
+
+      <div class="q">
+        <p>3. These are several ways in installing device drivers EXCEPT FOR:</p>
+        <label><input type="radio" name="q3" value="b"> b. None</label><br>
+        <label><input type="radio" name="q3" value="a"> a. Driver Update through Device Manager</label><br>
+        <label><input type="radio" name="q3" value="c"> c. Manufacturer's DVD Installer</label><br>
+        <label><input type="radio" name="q3" value="d"> d. Downloading drivers online</label><br>
+        <label><input type="radio" name="q3" value="e"> e. Driverpack Solution</label>
+      </div>
+
+      <div class="q">
+        <p>4. When installing an operating system, these files are placed in a boot drive.</p>
+        <label><input type="radio" name="q4" value="d"> d. Hard Drive</label><br>
+        <label><input type="radio" name="q4" value="a"> a. USB</label><br>
+        <label><input type="radio" name="q4" value="b"> b. Flash Drive</label><br>
+        <label><input type="radio" name="q4" value="c"> c. Random Access Memory</label>
+      </div>
+
+      <div class="q">
+        <p>5. The following are operating systems EXCEPT FOR:</p>
+        <label><input type="radio" name="q5" value="a"> a. Reaver</label><br>
+        <label><input type="radio" name="q5" value="b"> b. MAC OS</label><br>
+        <label><input type="radio" name="q5" value="c"> c. Linux</label><br>
+        <label><input type="radio" name="q5" value="d"> d. Windows</label>
+      </div>
+
+      <div class="q">
+        <p>6. Which of the following is a FREE operating system?</p>
+        <label><input type="radio" name="q6" value="b"> b. Linux</label><br>
+        <label><input type="radio" name="q6" value="a"> a. MAC OS</label><br>
+        <label><input type="radio" name="q6" value="c"> c. Reaver</label><br>
+        <label><input type="radio" name="q6" value="d"> d. Windows</label>
+      </div>
+
+      <div class="q">
+        <p>7. It is responsible in making sure that all chips, hard drives, ports, CPU, and other components function together properly. This boots the computer and loads the drivers.</p>
+        <label><input type="radio" name="q7" value="d"> d. BIOS</label><br>
+        <label><input type="radio" name="q7" value="a"> a. Device Driver</label><br>
+        <label><input type="radio" name="q7" value="b"> b. Operating System</label><br>
+        <label><input type="radio" name="q7" value="c"> c. Software</label>
+      </div>
+
+      <div class="q">
+        <p>8. Which device do we usually use to install an operating system?</p>
+        <label><input type="radio" name="q8" value="d"> d. Flash Drive</label><br>
+        <label><input type="radio" name="q8" value="a"> a. Hard Drive</label><br>
+        <label><input type="radio" name="q8" value="b"> b. Cloud Drive</label><br>
+        <label><input type="radio" name="q8" value="c"> c. Random Access Memory</label>
+      </div>
+
+      <div class="q">
+        <p>9. This operating system makes use of an interface with a Start Menu, Taskbar, and System Tray.</p>
+        <label><input type="radio" name="q9" value="c"> c. Windows</label><br>
+        <label><input type="radio" name="q9" value="a"> a. Reaver</label><br>
+        <label><input type="radio" name="q9" value="b"> b. Linux</label><br>
+        <label><input type="radio" name="q9" value="d"> d. MAC OS</label>
+      </div>
+
+      <div class="q">
+        <p>10. This is a program used by the operating system to organize data or application files.</p>
+        <label><input type="radio" name="q10" value="d"> d. File System</label><br>
+        <label><input type="radio" name="q10" value="a"> a. .EXE organizer</label><br>
+        <label><input type="radio" name="q10" value="b"> b. Installation Procedure</label><br>
+        <label><input type="radio" name="q10" value="c"> c. Winzip</label>
+      </div>
+
+      <div style="text-align:right">
+        <button type="button" id="submitBtn">Submit Exam</button>
+      </div>
+    </form>
+  </div>
+
+<script>
+const startBtn = document.getElementById('startBtn');
+const examForm = document.getElementById('examForm');
+const before = document.getElementById('before');
+const status = document.getElementById('status');
+const submitBtn = document.getElementById('submitBtn');
+
+startBtn.addEventListener('click', async () => {
+  try { await document.documentElement.requestFullscreen(); }
+  catch (e) { status.textContent = 'Fullscreen blocked. Press F11 or try another browser.'; return; }
+  before.style.display = 'none';
+  examForm.style.display = 'block';
+  monitorRestrictions();
+});
+
+function monitorRestrictions() {
+  document.addEventListener('fullscreenchange', () => { if (!document.fullscreenElement) endExam('You exited fullscreen. Exam ended.'); });
+  document.addEventListener('visibilitychange', () => { if (document.hidden) endExam('You switched tabs. Exam ended.'); });
+  window.addEventListener('blur', () => { endExam('Window lost focus. Exam ended.'); });
+}
+
+function endExam(msg) {
+  try { document.exitFullscreen(); } catch (e) {}
+  examForm.style.display = 'none';
+  before.style.display = 'block';
+  status.textContent = msg;
+  startBtn.disabled = true;
+}
+
+submitBtn.addEventListener('click', () => {
+  const answers = {q1:'c',q2:'a',q3:'b',q4:'d',q5:'a',q6:'b',q7:'d',q8:'d',q9:'c',q10:'d'};
+  let score = 0, total = Object.keys(answers).length;
+  Object.keys(answers).forEach(k => {
+    const el = document.querySelector(`input[name="${k}"]:checked`);
+    if (el && el.value === answers[k]) score++;
+  });
+  alert('You scored ' + score + '/' + total);
+  endExam('Exam submitted.');
+});
+</script>
+</body>
+</html>
