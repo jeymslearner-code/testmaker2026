@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>UNIT TEST 1 — TestMaker2026</title>
+<style>
+  body{font-family:Arial;margin:0;background:#f4f7fb;display:flex;align-items:center;justify-content:center;height:100vh}
+  #wrap{width:95%;max-width:900px;background:#fff;padding:20px;border-radius:10px;box-shadow:0 8px 24px rgba(0,0,0,.06);max-height:92vh;overflow:auto}
+  .q{margin:16px 0}
+  button{padding:10px 14px;border:none;border-radius:8px;cursor:pointer;background:#0366d6;color:#fff}
+  #startBtn{display:block;margin:12px auto}
+  #status{color:#c0392b;font-weight:600;text-align:center}
+</style>
+</head>
+<body>
+  <div id="wrap">
+    <h1>UNIT TEST 1</h1>
+    <div id="before">
+      <p>Press Start to enter fullscreen. Do not exit fullscreen or switch tabs.</p>
+      <button id="startBtn">Start UNIT TEST 1</button>
+      <p id="status"></p>
+    </div>
+
+    <form id="examForm" style="display:none">
+      <div class="q">
+        <p>1. What is the best indicator that you have successfully assembled a computer?</p>
+        <label><input type="radio" name="q1" value="d"> d. The PC is able to boot up to the BIOS.</label><br>
+        <label><input type="radio" name="q1" value="a"> a. You are able to close the system case cover.</label><br>
+        <label><input type="radio" name="q1" value="b"> b. All wires are connected and the lights blink when turned on.</label><br>
+        <label><input type="radio" name="q1" value="c"> c. There is a beeping sound as you turn it on.</label>
+      </div>
+
+      <div class="q">
+        <p>2. These are the most common ports used by monitors to produce best video qualities EXCEPT FOR</p>
+        <label><input type="radio" name="q2" value="c"> c. RPS</label><br>
+        <label><input type="radio" name="q2" value="a"> a. HDMI</label><br>
+        <label><input type="radio" name="q2" value="b"> b. DVI</label><br>
+        <label><input type="radio" name="q2" value="d"> d. VGA</label>
+      </div>
+
+      <div class="q">
+        <p>3. These are the most necessary peripherals you should connect to your system unit to be able to run the computer easily.</p>
+        <label><input type="radio" name="q3" value="b"> b. Keyboard, Mouse, Monitor</label><br>
+        <label><input type="radio" name="q3" value="a"> a. Speakers, Printer</label><br>
+        <label><input type="radio" name="q3" value="c"> c. Joystick, Headphones, Speakers</label><br>
+        <label><input type="radio" name="q3" value="d"> d. Scanner, Mouse, Webcam</label>
+      </div>
+
+      <div class="q">
+        <p>4. When these are being installed in their slots, you should push these down properly to align it to the slots until you hear a click when the tabs lock.</p>
+        <label><input type="radio" name="q4" value="c"> c. Random Access Memory</label><br>
+        <label><input type="radio" name="q4" value="a"> a. CPU Fan</label><br>
+        <label><input type="radio" name="q4" value="b"> b. Central Processing Unit</label><br>
+        <label><input type="radio" name="q4" value="d"> d. Power Supply Unit</label>
+      </div>
+
+      <div class="q">
+        <p>5. When wearing the anti-static wrist wrap, where should the other end be clipped onto?</p>
+        <label><input type="radio" name="q5" value="a"> a. Unpainted part of the case</label><br>
+        <label><input type="radio" name="q5" value="b"> b. Standoffs of the case</label><br>
+        <label><input type="radio" name="q5" value="c"> c. Any screw</label><br>
+        <label><input type="radio" name="q5" value="d"> d. I/O Bezel Plate</label>
+      </div>
+
+      <div class="q">
+        <p>6. After removing the CPU, add thermal paste on the pins before putting it back. (True / False)</p>
+        <label><input type="radio" name="q6" value="false"> False</label><br>
+        <label><input type="radio" name="q6" value="true"> True</label>
+      </div>
+
+      <div class="q">
+        <p>7. The following are wirings from the power supply connected to the motherboard EXCEPT FOR:</p>
+        <label><input type="radio" name="q7" value="a"> a. 2-pin power connector</label><br>
+        <label><input type="radio" name="q7" value="b"> b. 24-pin ATX power connector</label><br>
+        <label><input type="radio" name="q7" value="c"> c. SATA power connector</label>
+      </div>
+
+      <div class="q">
+        <p>8. After disassembling a computer, what do you usually do before re-assembling the components again?</p>
+        <label><input type="radio" name="q8" value="d"> d. Put them away in a clean and secure box</label><br>
+        <label><input type="radio" name="q8" value="a"> a. Note the specifications</label><br>
+        <label><input type="radio" name="q8" value="b"> b. Use a well sanitized moist cloth and wipe the components neatly</label><br>
+        <label><input type="radio" name="q8" value="c"> c. Let them dry through the air conditioner or at room temperature</label>
+      </div>
+
+      <div class="q">
+        <p>9. Ideally, what is the LAST component that you take out in the disassembly process?</p>
+        <label><input type="radio" name="q9" value="d"> d. CPU Fan</label><br>
+        <label><input type="radio" name="q9" value="a"> a. RAM</label><br>
+        <label><input type="radio" name="q9" value="b"> b. Power Supply Connectors</label><br>
+        <label><input type="radio" name="q9" value="c"> c. CPU</label>
+      </div>
+
+      <div class="q">
+        <p>10. Before assembling the computer components, you should clean the components and add an amount of thermal paste to the heat sink and the processor. (True / False)</p>
+        <label><input type="radio" name="q10" value="true"> True</label><br>
+        <label><input type="radio" name="q10" value="false"> False</label>
+      </div>
+
+      <div style="text-align:right">
+        <button type="button" id="submitBtn">Submit Exam</button>
+      </div>
+    </form>
+  </div>
+
+<script>
+const startBtn = document.getElementById('startBtn');
+const examForm = document.getElementById('examForm');
+const before = document.getElementById('before');
+const status = document.getElementById('status');
+const submitBtn = document.getElementById('submitBtn');
+
+startBtn.addEventListener('click', async () => {
+  try { await document.documentElement.requestFullscreen(); }
+  catch (e) { status.textContent = 'Fullscreen blocked. Press F11 or try another browser.'; return; }
+  before.style.display = 'none';
+  examForm.style.display = 'block';
+  monitorRestrictions();
+});
+
+function monitorRestrictions() {
+  document.addEventListener('fullscreenchange', () => { if (!document.fullscreenElement) endExam('You exited fullscreen. Exam ended.'); });
+  document.addEventListener('visibilitychange', () => { if (document.hidden) endExam('You switched tabs. Exam ended.'); });
+  window.addEventListener('blur', () => { endExam('Window lost focus. Exam ended.'); });
+}
+
+function endExam(msg) {
+  try { document.exitFullscreen(); } catch (e) {}
+  examForm.style.display = 'none';
+  before.style.display = 'block';
+  status.textContent = msg;
+  startBtn.disabled = true;
+}
+
+submitBtn.addEventListener('click', () => {
+  const answers = {q1:'d',q2:'c',q3:'b',q4:'c',q5:'a',q6:'false',q7:'a',q8:'d',q9:'d',q10:'true'};
+  let score = 0, total = Object.keys(answers).length;
+  Object.keys(answers).forEach(k => {
+    const el = document.querySelector(`input[name="${k}"]:checked`);
+    if (el && el.value === answers[k]) score++;
+  });
+  alert('You scored ' + score + '/' + total);
+  endExam('Exam submitted.');
+});
+</script>
+</body>
+</html>
